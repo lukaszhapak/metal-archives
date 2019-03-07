@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<TabPane xmlns:fx="http://javafx.com/fxml/1" fx:id="tabPanel" prefHeight="700.0" prefWidth="1200.0"
+         tabClosingPolicy="UNAVAILABLE"
+         xmlns="http://javafx.com/javafx/8.0.121" fx:controller="source.MainController">
+    <Tab text="Bands">
+        <fx:include fx:id="band" source="band/bandView.fxml"/>
+    </Tab>
+    <Tab text="Albums">
+        <fx:include fx:id="album" source="album/albumView.fxml"/>
+    </Tab>
+    <Tab text="Songs">
+        <fx:include fx:id="song" source="song/songView.fxml"/>
+    </Tab>
+    <Tab text="Lyrics">
+        <fx:include fx:id="lyric" source="lyric/lyricView.fxml"/>
+    </Tab>
+    <Tab text="Genres">
+        <fx:include fx:id="genre" source="genre/genreView.fxml"/>
+    </Tab>
+    <Tab text="Albums per Country">
+        <fx:include fx:id="albumPerCountry" source="album_per_country/albumPerCountryView.fxml"/>
+    </Tab>
+    <Tab text="Admin Panel">
+        <fx:include fx:id="admin" source="admin/adminView.fxml"/>
+    </Tab>
+</TabPane>

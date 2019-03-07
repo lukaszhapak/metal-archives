@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<Pane xmlns:fx="http://javafx.com/fxml/1" prefHeight="131.0" prefWidth="1200.0"
+      xmlns="http://javafx.com/javafx/8.0.172-ea" fx:controller="source.band.BandFormController">
+
+    <Button fx:id="openFormButton" layoutX="503.0" layoutY="46.0" mnemonicParsing="false"
+            onMouseClicked="#showAddBandForm" text="Add new band">
+        <font>
+            <Font size="20.0"/>
+        </font>
+    </Button>
+
+    <Pane fx:id="bandForm" prefHeight="131.0" prefWidth="1200.0" visible="false">
+
+        <Button fx:id="addButton" layoutX="1096.0" layoutY="68.0" mnemonicParsing="false" onMouseClicked="#addNewBand"
+                prefHeight="49.0" prefWidth="82.0" text="Add"/>
+        <Button fx:id="confirmEditButton" layoutX="1096.0" layoutY="68.0" mnemonicParsing="false"
+                onMouseClicked="#updateBand" prefHeight="49.0" prefWidth="82.0" text="Confirm"/>
+        <ComboBox fx:id="availableGenres" layoutX="650.0" layoutY="86.0" prefHeight="24.0" prefWidth="224.0"/>
+        <Label layoutX="587.0" layoutY="91.0" text="Genres:"/>
+        <Label layoutX="14.0" layoutY="91.0" text="Name:"/>
+        <Label layoutX="205.0" layoutY="91.0" text="Country:"/>
+        <Label layoutX="440.0" layoutY="91.0" text="Formed In:"/>
+        <TextField fx:id="newBandName" layoutX="68.0" layoutY="86.0" prefHeight="26.0" prefWidth="121.0"/>
+        <TextField fx:id="newBandCountry" layoutX="270.0" layoutY="86.0" prefHeight="26.0" prefWidth="156.0"/>
+        <TextField fx:id="newBandFormedIn" layoutX="517.0" layoutY="86.0" prefHeight="26.0" prefWidth="56.0"
+                   promptText="YYYY"/>
+        <ListView fx:id="newBandGenres" layoutX="887.0" layoutY="55.0" prefHeight="58.0" prefWidth="200.0"/>
+        <Label layoutX="887.0" layoutY="27.0" text="Selected Genres:"/>
+        <Label fx:id="formLabel" layoutX="25.0" layoutY="20.0" text="Add new Band">
+            <font>
+                <Font size="24.0"/>
+            </font>
+        </Label>
+        <Button layoutX="1017.0" layoutY="22.0" mnemonicParsing="false" onMouseClicked="#clearSelectedGenres"
+                prefHeight="26.0" prefWidth="70.0" text="Clear"/>
+
+        <Button layoutX="229.0" layoutY="19.0" mnemonicParsing="false" onMouseClicked="#closeBandForm" text="Cancel">
+            <font>
+                <Font size="17.0"/>
+            </font>
+        </Button>
+    </Pane>
+</Pane>

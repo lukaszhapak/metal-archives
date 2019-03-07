@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<Pane xmlns:fx="http://javafx.com/fxml/1" prefHeight="131.0" prefWidth="1200.0"
+      xmlns="http://javafx.com/javafx/8.0.172-ea" fx:controller="source.song.SongFormController">
+
+    <Button fx:id="openFormButton" layoutX="507.0" layoutY="49.0" mnemonicParsing="false"
+            onMouseClicked="#showAddSongForm" text="Add new song">
+        <font>
+            <Font size="20.0"/>
+        </font>
+    </Button>
+
+    <Pane fx:id="songForm" visible="false">
+
+        <Button fx:id="addButton" layoutX="1096.0" layoutY="68.0" mnemonicParsing="false" onMouseClicked="#addNewSong"
+                prefHeight="49.0" prefWidth="82.0" text="Add"/>
+        <Button fx:id="confirmEditButton" layoutX="1096.0" layoutY="68.0" mnemonicParsing="false"
+                onMouseClicked="#updateSong" prefHeight="49.0" prefWidth="82.0" text="Confirm"/>
+        <Label fx:id="formLabel" layoutX="25.0" layoutY="20.0" text="Add new Song">
+            <font>
+                <Font size="24.0"/>
+            </font>
+        </Label>
+        <Button layoutX="229.0" layoutY="19.0" mnemonicParsing="false" onMouseClicked="#closeSongForm" text="Cancel">
+            <font>
+                <Font size="17.0"/>
+            </font>
+        </Button>
+        <Label layoutX="25.0" layoutY="60.0" text="Band:"/>
+        <ComboBox fx:id="newSongBandName" layoutX="25.0" layoutY="80.0" prefHeight="26.0" prefWidth="241.0"/>
+        <Label layoutX="293.0" layoutY="60.0" text="Album:"/>
+        <ComboBox fx:id="newSongAlbumName" layoutX="283.0" layoutY="80.0" prefHeight="26.0" prefWidth="290.0"/>
+        <Label layoutX="598.0" layoutY="58.0" text="Name:"/>
+        <TextField fx:id="newSongName" layoutX="589.0" layoutY="80.0"/>
+        <TextField fx:id="newSongDuration" layoutX="794.0" layoutY="80.0"/>
+        <Label layoutX="794.0" layoutY="56.0" text="Duration:"/>
+    </Pane>
+</Pane>

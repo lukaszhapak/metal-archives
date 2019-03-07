@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<Pane xmlns:fx="http://javafx.com/fxml/1" prefHeight="660" prefWidth="1200.0"
+      xmlns="http://javafx.com/javafx/8.0.172-ea" fx:controller="source.lyric.LyricFormController">
+
+    <Pane fx:id="lyricForm" prefHeight="660.0" prefWidth="1178.0" visible="false">
+
+        <Button fx:id="addButton" layoutX="940.0" layoutY="68.0" mnemonicParsing="false" onMouseClicked="#addNewLyric"
+                prefHeight="49.0" prefWidth="82.0" text="Add"/>
+        <Button fx:id="confirmEditButton" layoutX="940.0" layoutY="68.0" mnemonicParsing="false"
+                onMouseClicked="#updateLyric" prefHeight="49.0" prefWidth="82.0" text="Confirm"/>
+        <Label fx:id="formLabel" layoutX="25.0" layoutY="20.0" text="Add new Lyric">
+            <font>
+                <Font size="24.0"/>
+            </font>
+        </Label>
+        <Button layoutX="229.0" layoutY="19.0" mnemonicParsing="false" onMouseClicked="#closeLyricForm" text="Cancel">
+            <font>
+                <Font size="17.0"/>
+            </font>
+        </Button>
+        <Pane layoutY="60" fx:id="lyricFormTop">
+            <Label layoutX="25.0" text="Band:"/>
+            <ComboBox fx:id="newLyricBandName" layoutX="25.0" layoutY="20.0" prefHeight="26.0" prefWidth="241.0"/>
+            <Label layoutX="293.0" text="Album:"/>
+            <ComboBox fx:id="newLyricAlbumName" layoutX="283.0" layoutY="20.0" prefHeight="26.0" prefWidth="290.0"/>
+            <Label layoutX="610.0" text="Song:"/>
+            <ComboBox fx:id="newLyricSongName" layoutX="600.0" layoutY="20.0" prefHeight="26.0" prefWidth="251.0"/>
+        </Pane>
+
+        <TextArea fx:id="newLyrics" layoutX="25.0" layoutY="164.0" prefHeight="464.0" prefWidth="1055.0"/>
+        <Label layoutX="27.0" layoutY="135.0" text="Lyrics:"/>
+    </Pane>
+</Pane>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.Pane?>
+<Pane xmlns:fx="http://javafx.com/fxml"
+      xmlns="http://javafx.com/javafx"
+      fx:controller="source.album.AlbumTableController"
+      prefHeight="400.0" prefWidth="600.0">
+
+    <TableView fx:id="albumsTableView" prefHeight="450.0" prefWidth="1100.0">
+        <columns>
+            <TableColumn prefWidth="300.0" text="Band Name">
+                <cellValueFactory>
+                    <PropertyValueFactory property="bandName"/>
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn prefWidth="400.0" text="Album Name">
+                <cellValueFactory>
+                    <PropertyValueFactory property="name"/>
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn prefWidth="200.0" text="Release Year">
+                <cellValueFactory>
+                    <PropertyValueFactory property="releaseYear"/>
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn prefWidth="200.0" text="Songs Count">
+                <cellValueFactory>
+                    <PropertyValueFactory property="songsCount"/>
+                </cellValueFactory>
+            </TableColumn>
+        </columns>
+    </TableView>
+</Pane>

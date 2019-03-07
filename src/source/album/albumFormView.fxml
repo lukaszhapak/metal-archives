@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<Pane xmlns:fx="http://javafx.com/fxml/1" prefHeight="260.0" prefWidth="1198.0"
+      xmlns="http://javafx.com/javafx/8.0.172-ea" fx:controller="source.album.AlbumFormController">
+    <Button fx:id="openFormButton" layoutX="507.0" layoutY="49.0" mnemonicParsing="false"
+            onMouseClicked="#showAddAlbumForm" text="Add new album">
+        <font>
+            <Font size="20.0"/>
+        </font>
+    </Button>
+
+    <Pane fx:id="albumForm" visible="false">
+
+        <Button fx:id="addButton" layoutX="1096.0" layoutY="68.0" mnemonicParsing="false" onMouseClicked="#addNewAlbum"
+                prefHeight="49.0" prefWidth="82.0" text="Add"/>
+        <Button fx:id="confirmEditButton" layoutX="1096.0" layoutY="68.0" mnemonicParsing="false"
+                onMouseClicked="#updateAlbum" prefHeight="49.0" prefWidth="82.0" text="Confirm"/>
+        <Label fx:id="formLabel" layoutX="25.0" layoutY="20.0" text="Add new Album">
+            <font>
+                <Font size="24.0"/>
+            </font>
+        </Label>
+        <Button layoutX="229.0" layoutY="19.0" mnemonicParsing="false" onMouseClicked="#closeAlbumForm" text="Cancel">
+            <font>
+                <Font size="17.0"/>
+            </font>
+        </Button>
+        <Label layoutX="25.0" layoutY="60.0" text="Band:"/>
+        <ComboBox fx:id="newAlbumBandName" layoutX="25.0" layoutY="80.0" prefHeight="26.0" prefWidth="241.0"/>
+        <Label layoutX="320.0" layoutY="60.0" text="Name:"/>
+        <TextField fx:id="newAlbumName" layoutX="311.0" layoutY="80.0"/>
+        <TextField fx:id="newAlbumReleaseYear" layoutX="508.0" layoutY="80.0"/>
+        <Label layoutX="516.0" layoutY="58.0" text="Release year:"/>
+    </Pane>
+</Pane>

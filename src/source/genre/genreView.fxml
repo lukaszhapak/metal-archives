@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.Pane?>
+<Pane xmlns:fx="http://javafx.com/fxml/1" prefHeight="660.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.121"
+      fx:controller="source.genre.GenreController">
+    <ListView fx:id="genresListView" layoutX="49.0" layoutY="96.0" prefHeight="359.0" prefWidth="1093.0"/>
+    <TextField fx:id="genreNameInput" layoutX="837.0" layoutY="600.0"/>
+    <Button layoutX="1057.0" layoutY="600.0" mnemonicParsing="false" onMouseClicked="#addNewGenre" prefHeight="26.0"
+            prefWidth="85.0" text="Add"/>
+    <Button layoutX="1080.0" layoutY="41.0" mnemonicParsing="false" onMouseClicked="#delete" text="Delete"/>
+    <Label layoutX="731.0" layoutY="605.0" text="Genre Name:"/>
+</Pane>

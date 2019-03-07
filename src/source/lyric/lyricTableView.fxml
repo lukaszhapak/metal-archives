@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.Pane?>
+<Pane xmlns:fx="http://javafx.com/fxml"
+      xmlns="http://javafx.com/javafx"
+      fx:controller="source.lyric.LyricTableController"
+      prefHeight="400.0" prefWidth="600.0">
+
+    <TableView fx:id="lyricsTableView" prefHeight="450.0" prefWidth="1100.0">
+        <columns>
+            <TableColumn prefWidth="200.0" text="Band">
+                <cellValueFactory>
+                    <PropertyValueFactory property="bandName"/>
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn prefWidth="200.0" text="Album">
+                <cellValueFactory>
+                    <PropertyValueFactory property="albumName"/>
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn prefWidth="200.0" text="Song">
+                <cellValueFactory>
+                    <PropertyValueFactory property="songName"/>
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn prefWidth="500.0" text="Lyric">
+                <cellValueFactory>
+                    <PropertyValueFactory property="lyric"/>
+                </cellValueFactory>
+            </TableColumn>
+        </columns>
+    </TableView>
+</Pane>

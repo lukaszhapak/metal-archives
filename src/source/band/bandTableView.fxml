@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.cell.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.Pane?>
+<Pane xmlns:fx="http://javafx.com/fxml"
+      xmlns="http://javafx.com/javafx"
+      fx:controller="source.band.BandTableController"
+      prefHeight="400.0" prefWidth="600.0">
+
+    <TableView fx:id="bandsTableView" prefHeight="450.0" prefWidth="1100.0">
+        <columns>
+            <TableColumn prefWidth="200.0" text="Band Name">
+                <cellValueFactory>
+                    <PropertyValueFactory property="name"/>
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn prefWidth="200.0" text="Country">
+                <cellValueFactory>
+                    <PropertyValueFactory property="country"/>
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn prefWidth="100.0" text="Formed In">
+                <cellValueFactory>
+                    <PropertyValueFactory property="formedIn"/>
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn prefWidth="300.0" text="Albums">
+                <cellValueFactory>
+                    <PropertyValueFactory property="albums"/>
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn prefWidth="300.0" text="Genres">
+                <cellValueFactory>
+                    <PropertyValueFactory property="genresString"/>
+                </cellValueFactory>
+            </TableColumn>
+        </columns>
+    </TableView>
+</Pane>

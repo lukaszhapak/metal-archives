@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.Pane?>
+<Pane xmlns:fx="http://javafx.com/fxml/1" prefHeight="291.0" prefWidth="1221.0"
+      xmlns="http://javafx.com/javafx/8.0.172-ea" fx:controller="source.song.SongTopBarController">
+    <Button layoutX="975.0" layoutY="33.0" mnemonicParsing="false" onMouseClicked="#deleteSong" prefHeight="26.0"
+            prefWidth="173.0" text="Delete selected Song"/>
+    <Button layoutX="765.0" layoutY="33.0" mnemonicParsing="false" onMouseClicked="#showEditSongForm"
+            text="Edit selected Song"/>
+    <Label layoutX="38.0" layoutY="38.0" text="Band:"/>
+    <ComboBox fx:id="bandNameComboBox" layoutX="97.0" layoutY="33.0" prefHeight="26.0" prefWidth="198.0"/>
+    <Label layoutX="331.0" layoutY="38.0" text="Album:"/>
+    <ComboBox fx:id="albumNameComboBox" layoutX="393.0" layoutY="33.0" prefHeight="26.0" prefWidth="208.0"/>
+</Pane>

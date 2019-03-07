@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.Pane?>
+<Pane xmlns:fx="http://javafx.com/fxml/1" prefHeight="660.0" prefWidth="1200.0"
+      xmlns="http://javafx.com/javafx/8.0.172-ea" fx:controller="source.album.AlbumController">
+
+    <Pane>
+        <fx:include fx:id="topBar" source="albumTopBarView.fxml"/>
+    </Pane>
+    <Pane layoutX="50.0" layoutY="80.0">
+        <fx:include fx:id="table" source="albumTableView.fxml"/>
+    </Pane>
+    <Pane layoutY="544.0" prefHeight="120.0" prefWidth="1200.0">
+        <fx:include fx:id="form" source="albumFormView.fxml"/>
+    </Pane>
+</Pane>

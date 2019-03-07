@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<Pane xmlns:fx="http://javafx.com/fxml/1" prefHeight="660.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.121"
+      fx:controller="source.admin.AdminController">
+    <Button layoutX="53.0" layoutY="587.0" mnemonicParsing="false" onMouseClicked="#eraseData" prefHeight="37.0"
+            prefWidth="218.0" text="Erase all data from database"/>
+    <Button layoutX="920.0" layoutY="582.0" mnemonicParsing="false" onMouseClicked="#addDummyData" prefHeight="37.0"
+            prefWidth="225.0" text="Add data from insertData.sql"/>
+    <TextArea fx:id="dummyDataEditor" layoutX="53.0" layoutY="96.0" prefHeight="464.0" prefWidth="1089.0"/>
+    <Label layoutX="53.0" layoutY="55.0" text="insertData.sql:">
+        <font>
+            <Font size="20.0"/>
+        </font>
+    </Label>
+    <Button layoutX="992.0" layoutY="55.0" mnemonicParsing="false" onMouseClicked="#saveChanges"
+            text="Save changes to file"/>
+</Pane>

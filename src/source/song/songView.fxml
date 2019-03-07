@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.Pane?>
+<Pane xmlns:fx="http://javafx.com/fxml"
+      xmlns="http://javafx.com/javafx"
+      fx:controller="source.song.SongController"
+      prefHeight="660.0" prefWidth="1200.0">
+
+
+    <Pane prefHeight="74.0" prefWidth="1200.0">
+        <fx:include source="songTopBarView.fxml" fx:id="topBar"/>
+    </Pane>
+
+    <Pane layoutX="50.0" layoutY="80.0" prefHeight="450.0" prefWidth="1100.0">
+        <fx:include source="songTableView.fxml" fx:id="table"/>
+    </Pane>
+
+    <Pane layoutY="533.0" prefHeight="131.0" prefWidth="1200.0">
+        <fx:include source="songFormView.fxml" fx:id="form"/>
+    </Pane>
+</Pane>
