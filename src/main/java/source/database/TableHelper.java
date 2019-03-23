@@ -31,7 +31,7 @@ class TableHelper {
 
     private static void createTable(String tableName) {
         FileOperationHelper fileOperationHelper = new FileOperationHelper();
-        String sql = fileOperationHelper.getDataFromFile(tableName + "/createTable.sql");
+        String sql = fileOperationHelper.getDataFromFile("./src/main/resources/" + tableName + "/createTable.sql");
         ConnectionHelper.executeUpdate(sql);
     }
 }

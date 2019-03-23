@@ -11,7 +11,7 @@ public class FileOperationHelper {
         StringBuilder result = new StringBuilder();
 
         try {
-            Scanner file = new Scanner(new File("src/source/" + fileName));
+            Scanner file = new Scanner(new File(fileName));
             while (file.hasNextLine()) {
                 result.append(file.nextLine()).append("\n");
             }
@@ -25,7 +25,7 @@ public class FileOperationHelper {
 
     public void saveDataInFile(String fileName, String data) {
         try {
-            PrintWriter out = new PrintWriter("src/source/" + fileName);
+            PrintWriter out = new PrintWriter(fileName);
             out.println(data);
             out.close();
         } catch (FileNotFoundException e) {

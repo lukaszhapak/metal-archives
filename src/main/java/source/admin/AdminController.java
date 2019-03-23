@@ -13,7 +13,7 @@ public class AdminController {
     public void initialize() {
         fileOperationHelper = new FileOperationHelper();
         adminRepository = new AdminRepository();
-        dummyDataEditor.setText(fileOperationHelper.getDataFromFile("admin/insertData.sql"));
+        dummyDataEditor.setText(fileOperationHelper.getDataFromFile("./src/main/resources/admin/insertData.sql"));
     }
 
     public void eraseData() {
@@ -25,6 +25,6 @@ public class AdminController {
     }
 
     public void saveChanges() {
-        fileOperationHelper.saveDataInFile("admin/insertData.sql", dummyDataEditor.getText());
+        fileOperationHelper.saveDataInFile("./src/main/resources/admin/insertData.sql", dummyDataEditor.getText());
     }
 }

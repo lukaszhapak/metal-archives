@@ -18,7 +18,7 @@ class AdminRepository {
 
     void insertDummyData() {
         FileOperationHelper fileOperationHelper = new FileOperationHelper();
-        String[] queries = fileOperationHelper.getDataFromFile("admin/insertData.sql").split("insert");
+        String[] queries = fileOperationHelper.getDataFromFile("./src/main/resources/admin/insertData.sql").split("insert");
 
         for (String sql : queries) {
             if (sql.length() > 5) {

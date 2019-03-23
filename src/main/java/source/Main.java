@@ -14,7 +14,7 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("main.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/main.fxml"));
         primaryStage.setTitle("Metal Archives");
         primaryStage.setScene(new Scene(root, 1200, 700));
         primaryStage.show();
