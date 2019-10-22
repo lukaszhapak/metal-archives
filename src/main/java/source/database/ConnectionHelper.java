@@ -36,7 +36,7 @@ public class ConnectionHelper {
 
     private static Connection getDbConnection() {
 
-        String connectionUrl = "jdbc:mysql://localhost:3306/" + Properties.DATA_BASE_NAME;
+        String connectionUrl = "jdbc:mysql://localhost:3306/" + Properties.DATA_BASE_NAME + "?serverTimezone=UTC";
 
         try {
             con = DriverManager.getConnection(connectionUrl, Properties.USER_NAME, Properties.PASSWORD);
